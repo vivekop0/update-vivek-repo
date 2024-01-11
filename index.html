@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivek-Sarkar</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: rgb(219, 87, 245);
+        }
+        .container{
+            background: rgb(219, 87, 245);
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .audio{
+            background: rgb(219, 87, 245);
+        }
+
+        audio{
+            width: 5px;
+        }
+        .continer-n{
+            width: 400px;
+            height: 250px;
+            background: #0387fa;
+            border:1px solid  #0b9af9 ;
+            border-radius: 5px;
+         
+        }
+        .heading{
+            text-align: center;
+            margin-top: 20px;
+            color: white;
+        }
+        .img{
+
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .btn-c{
+            display: flex;
+            justify-content: space-between;
+        }
+        .yes{
+            border: none;
+            padding-left: 11px;
+            padding-right: 11px;
+            padding-top: 3px;
+            padding-bottom: 5px;
+            margin-left: 30px;
+            border-radius: 5px;
+            color: white;
+            font-style: italic;
+            font-weight: bold;
+            background: rgb(64, 0, 255);
+            cursor: pointer;
+        }
+        .no{
+            background: rgb(64, 0, 255);
+            font-style: italic;
+            font-weight: bold;
+            border: none;
+            padding-left: 15px;
+            color: white;
+            padding-right: 15px;  
+            padding-top: 3px;
+            padding-bottom: 5px;
+            margin-right: 30px;
+            border-radius: 5px;
+            cursor: pointer;
+      transition: transform 0.3s ease-in-out;
+      position: relative;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="continer-n">
+            <h1 class="heading">do you love me baby?</h1>
+            <div class="img"><img class="bg" src="cute-bear.gif" alt="" width="100px"></div>
+
+            <div class="btn-c">
+                <button class="yes">yes</button>
+                <button class="no" onclick="changePosition()">no</button>
+            </div>
+        </div>
+
+    </div>
+<div class="audio">
+
+</div>
+      
+
+
+<script>
+    let yes = document.querySelector('.yes')
+    let b = document.querySelector('.bg')
+    let h = document.querySelector('.heading')
+let audioContainer = document.querySelector('.audio')
+    yes.addEventListener('click',()=>{
+       b.src ='./tkthao219-bubududu.gif'
+       h.innerHTML = ' Awww i love you too 😍'
+    
+      let audio = document.createElement('audio');
+        audio.controls = true;
+        audio.autoplay = true;
+        audio.src = 'MeRingtone_Chipi Chipi Chapa Chapa Ringtone.mp3';
+
+        // Append audio element to the container
+        audioContainer.appendChild(audio);
+
+    })
+
+    //btn'
+    function changePosition() {
+        b.src ='./milk-mocha.gif'
+        h.innerHTML = ' Dhaat Teri Ma*kI ch***d 🤬'
+     
+    }
+
+</script>
+</body>
+</html>
